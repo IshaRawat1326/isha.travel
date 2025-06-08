@@ -1,2 +1,2 @@
-# isha.travel
+# .travel
 this a user frndly website
