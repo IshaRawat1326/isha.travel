@@ -1,0 +1,518 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    width: 100%;
+background-image: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url('about2/the+brando.jpg');;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width:95%;
+    height:auto;
+    margin-left: 30px;
+}
+.logo{
+    color:#ff7200;
+    font-size: 40px;
+    font-family: cursive;
+    float:left;
+    padding-top: .6%;
+    cursor: pointer;
+}
+.menu{
+    width:600px;
+    float: left;
+    height:70px;
+}
+ul{
+    float: left;
+    display: flex;
+    padding-top: 30px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 14%;
+}
+ ul li{
+    list-style: none;
+    margin-left: 60px;
+    font-size: 16px;
+}
+    
+ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: .3s ease;
+}
+ ul li a:hover{
+    color: #ff7200;
+}
+/* Dropdown container (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #444;
+  min-width: 160px;
+  top: 100%; /* Position below the parent li */
+  left: 0;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+  border-radius: 0 0 8px 8px;
+  z-index: 1000;
+}
+
+/* Dropdown links */
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #666;
+  color: #fff;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Optional: Change "About" link style when dropdown active */
+.dropdown:hover > a {
+  background-color: #575757;
+  color: #fff;
+}
+
+.search-box{
+    float: right;
+    width:240px;
+    background: #fff;
+    height:30px;
+    border-radius: 15px;
+    margin-top: 1px;
+    margin-right: 2px;
+}
+
+.search-box .search-txt{
+    width:190px;
+    padding:0 6px;
+}
+.search-btn{
+    text-decoration: none;
+    background: #fff;
+    color:#000;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:30px;
+    height:30px;
+}
+.search-txt{
+    border: none;
+    background: none;
+    outline: none;
+    float:left;
+    color:#000;
+    font-size: 16px;
+    line-height:30px;
+    letter-spacing: .6px;
+}
+.title{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.title h1{
+    cursor: pointer;
+    font-family :cursive;
+    color: #fff;
+    font-size: 85px;
+    text-align: center;
+}
+
+.button{
+    position: absolute;
+    top: 51%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.btn{
+    color:#fff;
+    padding: 5px 20px;
+    font-size: 18px;
+    text-decoration: none;
+    border: 1px solid #fff;
+    transition: .3s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #000;
+}
+
+.home-section {
+    height: 100vh; /* Full viewport height */
+    background-image: url('about2/ron-dauphin-k-8-eX4Y3no-unsplash.jpg'); /* Single background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    position: relative;
+    overflow: hidden; /* Ensures no stray images leak out */
+}
+
+.home-section::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Adjust for better text contrast */
+    z-index: 1;
+}
+.home-content {
+    position: relative;
+    max-width: 800px;
+    z-index: 2;
+    padding: 20px;
+}
+
+.home-content h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.home-content p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.welcome-title {
+    font-family: 'Pacifico', cursive;
+    font-size: 54px;
+    color: #ffcc00;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+    margin-bottom: 20px;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.about-section-2 {
+  position: relative;
+  padding: 80px 20px;
+  background-image: url('about2/DSC08337.JPG'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.about-section-2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* dark overlay for text readability */
+  z-index: 1;
+}
+
+.about-text-2 {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+}
+
+.about-text-2 h2 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+.about-text-2 p {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-bottom: 15px;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+}
+.events-section {
+    padding: 60px 20px;
+    background-color: #f5f5f5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.events-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.events-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #222;
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+}
+
+.event-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 16px;
+}
+
+.event-card h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.event-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 10px;
+}
+
+.event-card p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.event-card .btn {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.event-card .btn:hover {
+    background-color: #e6b800;
+}
+.contact-section {
+    padding: 80px 20px;
+    background: linear-gradient(to right, #f0f8ff, #ffffff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-title {
+    font-size: 36px;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.contact-form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border-color: #ffcc00;
+    outline: none;
+}
+
+.contact-form .btn {
+    background-color: #ffcc00;
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form .btn:hover {
+    background-color: #e6b800;
+}
+.about-section {
+  background-color: black; /* Dark background */
+  padding: 40px;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  color: yellow; /* Make all text inside yellow by default */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.about-wrapper,
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* Ensure text blocks stack vertically on small screens */
+@media (max-width: 768px) {
+  .about-wrapper,
+  .about-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.about-section h1,
+.about-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: yellow; /* Make sure headings are yellow */
+}
+
+.about-section p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color:white; /* Paragraphs too */
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
+.about-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 40px 0;
+}
+
+/* Default layout: image left, text right */
+.about-image {
+  order: 1;
+  flex: 1 1 40%;
+}
+.about-content {
+  order: 2;
+  flex: 1 1 55%;
+}
+
+/* Alternate layout for every even section: image right, text left */
+.about-section:nth-of-type(odd) .about-wrapper {
+  flex-direction: row-reverse;
+}
+
+/* Responsive stack on small screens */
+@media (max-width: 768px) {
+  .about-wrapper {
+    flex-direction: column !important;
+    text-align: center;
+  }
+}
+
+  .about-image,
+  .about-content {
+    order: initial;
+    flex: 1 1 100%;
+  }
+.about-section#about .about-content {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.about-section#about .about-image {
+  flex: 1;
+  max-width: 400px;
+}
+
+.about-section#about .about-text {
+  flex: 1;
+  max-width: 600px;
+  color: white;
+}
+
+
+
